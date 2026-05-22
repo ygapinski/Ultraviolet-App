@@ -1,0 +1,8 @@
+# ensure you use a Node version compatible with your package.json engines
+# e.g. use Node >=24 if package.json requests it (see step 3 for Netlify config)
+pnpm install
+
+# stage and commit the updated lockfile
+git add pnpm-lock.yaml
+git commit -m "Update pnpm-lock.yaml to match package.json"
+git push
